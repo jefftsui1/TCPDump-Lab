@@ -1,4 +1,4 @@
-# Analyze Network Traffic with TCPDump
+# TCPDump Basic Commands
 
 <h2>Description</h2>
 
@@ -14,7 +14,9 @@ In this mini project I will be using TCPDump simple commands to capture newtwork
 <h2>How to Capture Network Traffic</h2>
 
 1. Open Terminal on Kali Linux VM
-2. Type on command line: ``tcpdump``
+2. Type on command line: 
+
+        $ tcpdump
 
 <p align="left">
 Error message from Terminal: <br/>
@@ -23,8 +25,9 @@ Error message from Terminal: <br/>
 Since it said we don't have permission to perform this on device, we will use sudo [for superuser do, allows temporarily elevate.] 
 
 4. Type on command line: 
-  ``sudo tcpdump``
-   and enter your password
+  
+       $ sudo tcpdump
+  and enter your password
   
 <p align="left">
 Performing TCPDump using sudo: <br/>
@@ -44,7 +47,8 @@ Type: Ctrl + c to stop capture
 <h3>Capture Only 15 Packets</h3>  
 
 Type on command line: 
-``sudo tcpdump -c 15``
+
+        $ sudo tcpdump -c 15
 
 <p align="left">
 Capturing packets with refreshed webpage: <br/>
@@ -55,7 +59,8 @@ Capturing packets with refreshed webpage: <br/>
 <h3>Capturing Packets with Number for Easier Visualization</h3>
   
 Type on command line: 
-```sudo tcpdump -c 15 -#```
+
+       $ sudo tcpdump -c 15 -#
 
 <p align="left">
 Showing the number in each captured packet: <br/>
@@ -65,7 +70,8 @@ Showing the number in each captured packet: <br/>
 <h3>Capture Packets in ASCII</h3>  
 
 Type on command line: 
-``sudo tcpdump -c 15 -#A``
+
+       $  sudo tcpdump -c 15 -#A
 
 <p align="left">
 Capturing packets in ASCII: <br/>
@@ -76,7 +82,8 @@ character-encoding scheme format, encrypted
 <h3>Capture Packets in HEX and ASCII</h3>  
 
 Type on command line: 
-``sudo tcpdump -c 15 -#XX``
+
+      $ sudo tcpdump -c 15 -#XX
 
 <p align="left">
 Capturing packets in HEX and ASCII: <br/>
@@ -86,7 +93,8 @@ Capturing packets in HEX and ASCII: <br/>
 <h3>Capture Packets in Readable Time Format</h3>  
 
 Type on command line: 
-``sudo tcpdump -c 15 -#tttt``
+
+      $ sudo tcpdump -c 15 -#tttt
 
 <p align="left">
 Capturing packets in Readable Time Format: <br/>
@@ -96,7 +104,8 @@ Capturing packets in Readable Time Format: <br/>
 <h3>List All Network Interfaces on Workstation</h3>  
 
 Type on command line: 
-``sudo tcpdump -D``
+
+      $ sudo tcpdump -D
 
 <p align="left">
 All Network Interfaces on Workstation: <br/>
@@ -108,19 +117,19 @@ All Network Interfaces on Workstation: <br/>
 Capturing Network Traffic on Website
 Type on command line: 
 
-``sudo tcpdump -#tttt host offsec.com -c 5`` 
+      $ sudo tcpdump -#tttt host offsec.com -c 5 
   
   
 Capturing Network Traffic on port 443
 Type on command line: 
 
-``sudo tcpdump -#tttt -c 5 port 443``
+      $ sudo tcpdump -#tttt -c 5 port 443
 
   
 Capturing Network Traffic on port 443 and a website
 Type on command line:
 
-``sudo tcpdump -#tttt -c 5 port 443 and host offsec.com``
+     $ sudo tcpdump -#tttt -c 5 port 443 and host offsec.com
 
 <p align="left">
 Capturing Network Traffic on a port and website: <br/>
@@ -130,8 +139,8 @@ Capturing Network Traffic on a port and website: <br/>
   
 Capture incoming traffic only : 
   
-  ``sudo tcpdump -#tttt -c 5 port 443 and src offsec.com``
+    $ sudo tcpdump -#tttt -c 5 port 443 and src offsec.com
   
 Capture outgoing traffic only: 
   
-  ``sudo tcpdump -#tttt -c 5 port 443 and dst offsec.com``
+    $ sudo tcpdump -#tttt -c 5 port 443 and dst offsec.com

@@ -1,4 +1,4 @@
-# TCPDump Basic Commands
+# TCPDump Basic Commands Practice
 
 <h2>Description</h2>
 
@@ -24,7 +24,7 @@ Error message from Terminal: <br/>
 <br />
 Since it said we don't have permission to perform this on device, we will use sudo [for superuser do, allows temporarily elevate.] 
 
-4. Type on command line: 
+3. Type on command line: 
   
        $ sudo tcpdump
   and enter your password
@@ -34,7 +34,7 @@ Performing TCPDump using sudo: <br/>
 <img src="https://i.imgur.com/opkUmpw.png" height="70%" width="70%" alt=""/>
 <br />
   
-5. TCPDump will capture traffic when you refresh a webpage.
+4. TCPDump will capture traffic when you refresh a webpage.
   
 <p align="left">
 Capturing traffic with refreshed webpage: <br/>
